@@ -34,6 +34,20 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+; Server
+(server-start)
+
+; Language
+(setq current-language-environment "Spanish")
+(setq org-export-default-language "es")
+
+; Hooks
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+; Keybindings
+(global-set-key "\M-p" 'backward-paragraph)
+(global-set-key "\M-n" 'forward-paragraph)
+(global-set-key (kbd "C-7") 'undo)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
