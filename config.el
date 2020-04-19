@@ -49,6 +49,9 @@
 (global-set-key "\M-n" 'forward-paragraph)
 (global-set-key (kbd "C-7") 'undo)
 
+; NeoTree
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
