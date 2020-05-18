@@ -60,6 +60,8 @@
 (eval-after-load 'nginx-mode
   '(add-hook 'nginx-mode-hook #'company-nginx-keywords))
 
+;; Terraform
+(add-hook 'terraform-mode-hook #'terraform-format-on-save-mode)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
